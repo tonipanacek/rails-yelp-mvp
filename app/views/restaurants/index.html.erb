@@ -1,0 +1,18 @@
+<div class="banner-home">
+  <div class="banner-content">
+    <h1>Eat up.</h1>
+    <a href="" class="btn btn-success">Let's review this ish</a>
+  </div>
+</div>
+
+<div class="container text-center">
+  <h1>SOME OF THE BEST EFFING RESTAURANTS IN WORLD!!!!</h1>
+
+  <ul class="list-unstyled">
+    <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant.name %> <br> <%= link_to "Mo' Deets", restaurant_path(restaurant) %></li><br>
+    <% end %>
+  </ul>
+
+  <%= link_to 'Add another restaurant(if you dare)', new_restaurant_path, class: "btn btn-primary" %>
+</div>

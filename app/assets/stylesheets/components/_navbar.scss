@@ -7,7 +7,7 @@
   padding: 0px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Logo */
@@ -22,12 +22,6 @@
   border-radius: 50%;
 }
 
-/* Right section */
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 /* Basic navbar item */
 .navbar-wagon-item {
